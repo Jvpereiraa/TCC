@@ -1,0 +1,10 @@
+br/com/kodeweave/dao/Conexao.class
+br/com/kodeweave/models/Tarefa.class
+br/com/kodeweave/conf/AppWebConfiguration.class
+br/com/kodeweave/sessao/controller/TarefaController.class
+br/com/kodeweave/conf/ServletSpringMVC.class
+br/com/kodeweave/dao/TarefaDao.class
+br/com/kodeweave/sessao/controller/LoginController.class
+br/com/kodeweave/dao/UsuarioDao.class
+br/com/kodeweave/conf/JPAConfiguration.class
+br/com/kodeweave/models/Usuario.class
