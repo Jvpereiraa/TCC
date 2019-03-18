@@ -15,100 +15,100 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="kodeWeave">
     <link rel="apple-touch-icon" href="apple-touch-icon-iphone.png">
-    <link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico">
+    <link rel="icon" type="image/vnd.microsoft.icon" href="resources/editor/favicon.ico">
     <link rel="SHORTCUT ICON" href="favicon.ico">
     <link rel="stylesheet" href="css/theme.css" />
     <script src="https://togetherjs.com/togetherjs-min.js"></script>
-    <script src="libraries/jquery/jquery.js"></script>
-    <script src="lib/jquery.clearsearch.js"></script>
+    <script src="resources/editor/libraries/jquery/jquery.js"></script>
+    <script src="resources/editor/lib/jquery.clearsearch.js"></script>
 
-    <script src="lib/jade.js"></script>
-    <script src="lib/he.js"></script>
-    <script src="lib/html2jade.js"></script>
-    <script src="lib/js2coffee.js"></script>
-    <script src="lib/stylus.min.js"></script>
-    <script src="lib/css2stylus.js"></script>
+    <script src="resources/editor/lib/jade.js"></script>
+    <script src="resources/editor/lib/he.js"></script>
+    <script src="resources/editor/lib/html2jade.js"></script>
+    <script src="resources/editor/lib/js2coffee.js"></script>
+    <script src="resources/editor/lib/stylus.min.js"></script>
+    <script src="resources/editor/lib/css2stylus.js"></script>
 
-    <script src="lib/jsbeautify/beautify.js"></script>
-    <script src="lib/jsbeautify/beautify-css.js"></script>
-    <script src="lib/jsbeautify/beautify-html.js"></script>
-    <script src="lib/jsbeautify/unpackers/javascriptobfuscator_unpacker.js"></script>
-    <script src="lib/jsbeautify/unpackers/urlencode_unpacker.js"></script>
-    <script src="lib/jsbeautify/unpackers/p_a_c_k_e_r_unpacker.js"></script>
-    <script src="lib/jsbeautify/unpackers/myobfuscate_unpacker.js"></script>
+    <script src="resources/editor/lib/jsbeautify/beautify.js"></script>
+    <script src="resources/editor/lib/jsbeautify/beautify-css.js"></script>
+    <script src="resources/editor/lib/jsbeautify/beautify-html.js"></script>
+    <script src="resources/editor/lib/jsbeautify/unpackers/javascriptobfuscator_unpacker.js"></script>
+    <script src="resources/editor/lib/jsbeautify/unpackers/urlencode_unpacker.js"></script>
+    <script src="resources/editor/lib/jsbeautify/unpackers/p_a_c_k_e_r_unpacker.js"></script>
+    <script src="resources/editor/lib/jsbeautify/unpackers/myobfuscate_unpacker.js"></script>
 
-    <script src="libraries/jszip/jszip.min.js"></script>
-    <script src="libraries/jszip/jszip-utils.js"></script>
-    <script src="libraries/jszip/FileSaver.js"></script>
-    <script src="libraries/jszip/Blob.js"></script>
-    <script src="libraries/alertifyjs/alertify.min.js"></script>
-    <script src="libraries/showdown/Showdown.min.js"></script>
+    <script src="resources/editor/libraries/jszip/jszip.min.js"></script>
+    <script src="resources/editor/libraries/jszip/jszip-utils.js"></script>
+    <script src="resources/editor/libraries/jszip/FileSaver.js"></script>
+    <script src="resources/editor/libraries/jszip/Blob.js"></script>
+    <script src="resources/editor/libraries/alertifyjs/alertify.min.js"></script>
+    <script src="resources/editor/libraries/showdown/Showdown.min.js"></script>
 
 
     <link rel="stylesheet" href="../tcc/userSetti.css">
 
-    <script src="libraries/codemirror/lib/codemirror.js"></script>
-    <script src="libraries/codemirror/mode/javascript/javascript.js"></script>
-    <script src="libraries/codemirror/mode/xml/xml.js"></script>
-    <script src="libraries/codemirror/mode/css/css.js"></script>
-    <script src="libraries/codemirror/mode/htmlmixed/htmlmixed.js"></script>
-    <script src="libraries/codemirror/mode/ruby/ruby.js"></script>
-    <script src="libraries/codemirror/mode/jade/jade.js"></script>
-    <script src="libraries/codemirror/mode/haml/haml.js"></script>
-    <script src="libraries/codemirror/addon/edit/closetag.js"></script>
-    <script src="libraries/codemirror/addon/edit/matchbrackets.js"></script>
-    <script src="libraries/codemirror/addon/selection/active-line.js"></script>
-    <script src="libraries/codemirror/addon/fold/foldcode.js"></script>
-    <script src="libraries/codemirror/addon/fold/foldgutter.js"></script>
-    <script src="libraries/codemirror/addon/fold/brace-fold.js"></script>
-    <script src="libraries/codemirror/addon/fold/xml-fold.js"></script>
-    <script src="libraries/codemirror/addon/fold/comment-fold.js"></script>
-    <script src="libraries/codemirror/addon/search/search.js"></script>
-    <script src="libraries/codemirror/addon/search/searchcursor.js"></script>
-    <script src="libraries/codemirror/addon/dialog/dialog.js"></script>
-    <script src="libraries/codemirror/addon/hint/show-hint.js"></script>
-    <script src="libraries/codemirror/addon/hint/xml-hint.js"></script>
-    <script src="libraries/codemirror/addon/hint/html-hint.js"></script>
-    <script src="libraries/codemirror/addon/hint/css-hint.js"></script>
-    <script src="libraries/codemirror/addon/hint/javascript-hint.js"></script>
-    <script src="libraries/codemirror/addon/htmlPalette.js"></script>
-    <script src="libraries/codemirror/addon/cssPalette.js"></script>
-    <script src="libraries/codemirror/addon/jsPalette.js"></script>
-    <script src="libraries/codemirror/addon/search/searchcursor.js"></script>
-    <script src="libraries/codemirror/addon/search/jump-to-line.js"></script>
-    <script src="libraries/codemirror/csslint.js"></script>
-    <script src="libraries/codemirror/jshint.js"></script>
-    <script src="libraries/codemirror/addon/lint/lint.js"></script>
-    <script src="libraries/codemirror/addon/lint/html-lint.js"></script>
-    <script src="libraries/codemirror/addon/lint/css-lint.js"></script>
-    <script src="libraries/codemirror/addon/lint/javascript-lint.js"></script>
-    <script src="libraries/codemirror/coffee-script.js"></script>
-    <script src="libraries/codemirror/coffeelint.js"></script>
-    <script src="libraries/codemirror/mode/coffeescript/coffeescript.js"></script>
-    <script src="libraries/codemirror/addon/lint/coffeescript-lint.js"></script>
-    <script src="libraries/codemirror/mode/sass/sass.js"></script>
-    <script src="libraries/codemirror/mode/stylus/stylus.js"></script>
-    <script src="libraries/codemirror/mode/jade/jade.js"></script>
-    <script src="libraries/codemirror/markdown.js"></script>
-    <script src="libraries/codemirror/continuelist.js"></script>
-    <script src="libraries/codemirror/emmet.js"></script>
-    <script src="libraries/codemirror/addon/tern/tern.js"></script>
+    <script src="resources/editor/libraries/codemirror/resources/editor/lib/codemirror.js"></script>
+    <script src="resources/editor/libraries/codemirror/mode/javascript/javascript.js"></script>
+    <script src="resources/editor/libraries/codemirror/mode/xml/xml.js"></script>
+    <script src="resources/editor/libraries/codemirror/mode/css/css.js"></script>
+    <script src="resources/editor/libraries/codemirror/mode/htmlmixed/htmlmixed.js"></script>
+    <script src="resources/editor/libraries/codemirror/mode/ruby/ruby.js"></script>
+    <script src="resources/editor/libraries/codemirror/mode/jade/jade.js"></script>
+    <script src="resources/editor/libraries/codemirror/mode/haml/haml.js"></script>
+    <script src="resources/editor/libraries/codemirror/addon/edit/closetag.js"></script>
+    <script src="resources/editor/libraries/codemirror/addon/edit/matchbrackets.js"></script>
+    <script src="resources/editor/libraries/codemirror/addon/selection/active-line.js"></script>
+    <script src="resources/editor/libraries/codemirror/addon/fold/foldcode.js"></script>
+    <script src="resources/editor/libraries/codemirror/addon/fold/foldgutter.js"></script>
+    <script src="resources/editor/libraries/codemirror/addon/fold/brace-fold.js"></script>
+    <script src="resources/editor/libraries/codemirror/addon/fold/xml-fold.js"></script>
+    <script src="resources/editor/libraries/codemirror/addon/fold/comment-fold.js"></script>
+    <script src="resources/editor/libraries/codemirror/addon/search/search.js"></script>
+    <script src="resources/editor/libraries/codemirror/addon/search/searchcursor.js"></script>
+    <script src="resources/editor/libraries/codemirror/addon/dialog/dialog.js"></script>
+    <script src="resources/editor/libraries/codemirror/addon/hint/show-hint.js"></script>
+    <script src="resources/editor/libraries/codemirror/addon/hint/xml-hint.js"></script>
+    <script src="resources/editor/libraries/codemirror/addon/hint/html-hint.js"></script>
+    <script src="resources/editor/libraries/codemirror/addon/hint/css-hint.js"></script>
+    <script src="resources/editor/libraries/codemirror/addon/hint/javascript-hint.js"></script>
+    <script src="resources/editor/libraries/codemirror/addon/htmlPalette.js"></script>
+    <script src="resources/editor/libraries/codemirror/addon/cssPalette.js"></script>
+    <script src="resources/editor/libraries/codemirror/addon/jsPalette.js"></script>
+    <script src="resources/editor/libraries/codemirror/addon/search/searchcursor.js"></script>
+    <script src="resources/editor/libraries/codemirror/addon/search/jump-to-line.js"></script>
+    <script src="resources/editor/libraries/codemirror/csslint.js"></script>
+    <script src="resources/editor/libraries/codemirror/jshint.js"></script>
+    <script src="resources/editor/libraries/codemirror/addon/lint/lint.js"></script>
+    <script src="resources/editor/libraries/codemirror/addon/lint/html-lint.js"></script>
+    <script src="resources/editor/libraries/codemirror/addon/lint/css-lint.js"></script>
+    <script src="resources/editor/libraries/codemirror/addon/lint/javascript-lint.js"></script>
+    <script src="resources/editor/libraries/codemirror/coffee-script.js"></script>
+    <script src="resources/editor/libraries/codemirror/coffeelint.js"></script>
+    <script src="resources/editor/libraries/codemirror/mode/coffeescript/coffeescript.js"></script>
+    <script src="resources/editor/libraries/codemirror/addon/lint/coffeescript-lint.js"></script>
+    <script src="resources/editor/libraries/codemirror/mode/sass/sass.js"></script>
+    <script src="resources/editor/libraries/codemirror/mode/stylus/stylus.js"></script>
+    <script src="resources/editor/libraries/codemirror/mode/jade/jade.js"></script>
+    <script src="resources/editor/libraries/codemirror/markdown.js"></script>
+    <script src="resources/editor/libraries/codemirror/continuelist.js"></script>
+    <script src="resources/editor/libraries/codemirror/emmet.js"></script>
+    <script src="resources/editor/libraries/codemirror/addon/tern/tern.js"></script>
 
     <script src="https://ternjs.net/node_modules/acorn/dist/acorn.js"></script>
     <script src="https://ternjs.net/node_modules/acorn/dist/acorn_loose.js"></script>
     <script src="https://ternjs.net/node_modules/acorn/dist/walk.js"></script>
     <script src="https://ternjs.net/doc/demo/polyfill.js"></script>
-    <script src="https://ternjs.net/lib/signal.js"></script>
-    <script src="https://ternjs.net/lib/tern.js"></script>
-    <script src="https://ternjs.net/lib/def.js"></script>
-    <script src="https://ternjs.net/lib/comment.js"></script>
-    <script src="https://ternjs.net/lib/infer.js"></script>
+    <script src="https://ternjs.net/resources/editor/lib/signal.js"></script>
+    <script src="https://ternjs.net/resources/editor/lib/tern.js"></script>
+    <script src="https://ternjs.net/resources/editor/lib/def.js"></script>
+    <script src="https://ternjs.net/resources/editor/lib/comment.js"></script>
+    <script src="https://ternjs.net/resources/editor/lib/infer.js"></script>
     <script src="https://ternjs.net/plugin/doc_comment.js"></script>
 
-    <script src="lib/htmlhint-custom.js"></script>
-    <script src="lib/htmlTidy.js"></script>
-    <script src="lib/cssTidy.js"></script>
-    <script src="lib/jsTidy.js"></script>
+    <script src="resources/editor/lib/htmlhint-custom.js"></script>
+    <script src="resources/editor/lib/htmlTidy.js"></script>
+    <script src="resources/editor/lib/cssTidy.js"></script>
+    <script src="resources/editor/lib/jsTidy.js"></script>
 
     <!--<script src="https://www.dropbox.com/static/api/2/dropins.js" id="dropboxjs" data-app-key="iggmggls28vuvif"></script>-->
 
@@ -239,9 +239,9 @@
                       <label for="alertify">Alertify JS (1.6.1)</label>
                     </a>
                     <div class="hide">
-                      <textarea class="libsources hide">    &lt;link rel="stylesheet" href="libraries/alertifyjs/css/alertify.min.css" /&gt;
-    &lt;link rel="stylesheet" href="libraries/alertifyjs/css/themes/default.min.css" /&gt;
-    &lt;script src="libraries/alertifyjs/alertify.min.js"&gt;&lt;/script&gt;</textarea>
+                      <textarea class="libsources hide">    &lt;link rel="stylesheet" href="resources/editor/libraries/alertifyjs/css/alertify.min.css" /&gt;
+    &lt;link rel="stylesheet" href="resources/editor/libraries/alertifyjs/css/themes/default.min.css" /&gt;
+    &lt;script src="resources/editor/libraries/alertifyjs/alertify.min.js"&gt;&lt;/script&gt;</textarea>
                       <textarea class="alertifyjs alertifyjs1 hide"></textarea>
                       <textarea class="alertifyjs alertifyjs2 hide"></textarea>
                       <textarea class="alertifyjs alertifyjs3 hide"></textarea>
@@ -260,7 +260,7 @@
                       <label for="angular">Angular JS (1.0.1)</label>
                     </a>
                     <div class="hide">
-                      <textarea class="libsources hide">    &lt;script src="libraries/angular/angular.min.js"&gt;&lt;/script&gt;</textarea>
+                      <textarea class="libsources hide">    &lt;script src="resources/editor/libraries/angular/angular.min.js"&gt;&lt;/script&gt;</textarea>
                       <textarea class="angularjs angularjs hide"></textarea>
                       <textarea class="angularzip jszipcode hide"></textarea>
                     </div>
@@ -274,8 +274,8 @@
                     </a>
                     <span class="new">&nbsp; Popular !</span>
                     <div class="hide">
-                      <textarea class="libsources hide">    &lt;link rel="stylesheet" href="libraries/bootstrap/bootstrap.css" /&gt;
-    &lt;script src="libraries/bootstrap/bootstrap.js"&gt;&lt;/script&gt;</textarea>
+                      <textarea class="libsources hide">    &lt;link rel="stylesheet" href="resources/editor/libraries/bootstrap/bootstrap.css" /&gt;
+    &lt;script src="resources/editor/libraries/bootstrap/bootstrap.js"&gt;&lt;/script&gt;</textarea>
                       <textarea class="bootstrap bootstrap1 hide"></textarea>
                       <textarea class="bootstrap bootstrap2 hide"></textarea>
                       <textarea class="bootstrapzip jszipcode hide"></textarea>
@@ -289,7 +289,7 @@
                       <label for="chartjs">Chart JS (0.2)</label>
                     </a>
                     <div class="hide">
-                      <textarea class="libsources hide">    &lt;script src="libraries/chartjs/chart.min.js"&gt;&lt;/script&gt;</textarea>
+                      <textarea class="libsources hide">    &lt;script src="resources/editor/libraries/chartjs/chart.min.js"&gt;&lt;/script&gt;</textarea>
                       <textarea class="chartjs hide"></textarea>
                       <textarea class="chartjszip jszipcode hide"></textarea>
                     </div>
@@ -300,56 +300,56 @@
                       <label for="codemirror">Codemirror (5.15.2)</label>
                     </a>
                     <div class="hide">
-                      <textarea class="libsources hide">    &lt;link rel="stylesheet" href="libraries/codemirror/lib/codemirror.css"&gt;
-    &lt;link rel="stylesheet" href="libraries/codemirror/addon/fold/foldgutter.css"&gt;
-    &lt;link rel="stylesheet" href="libraries/codemirror/inlet.css"&gt;
-    &lt;link rel="stylesheet" href="libraries/codemirror/addon/lint/lint.css"&gt;
-    &lt;link rel="stylesheet" href="libraries/codemirror/addon/dialog/dialog.css"&gt;
-    &lt;link rel="stylesheet" href="libraries/codemirror/addon/hint/show-hint.css"&gt;
-    &lt;script src="libraries/codemirror/lib/codemirror.js"&gt;&lt;/script&gt;
-    &lt;script src="libraries/codemirror/mode/javascript/javascript.js"&gt;&lt;/script&gt;
-    &lt;script src="libraries/codemirror/mode/xml/xml.js"&gt;&lt;/script&gt;
-    &lt;script src="libraries/codemirror/mode/css/css.js"&gt;&lt;/script&gt;
-    &lt;script src="libraries/codemirror/mode/htmlmixed/htmlmixed.js"&gt;&lt;/script&gt;
-    &lt;script src="libraries/codemirror/addon/edit/closetag.js"&gt;&lt;/script&gt;
-    &lt;script src="libraries/codemirror/addon/edit/matchbrackets.js"&gt;&lt;/script&gt;
-    &lt;script src="libraries/codemirror/addon/selection/active-line.js"&gt;&lt;/script&gt;
-    &lt;script src="libraries/codemirror/addon/fold/foldcode.js"&gt;&lt;/script&gt;
-    &lt;script src="libraries/codemirror/addon/fold/foldgutter.js"&gt;&lt;/script&gt;
-    &lt;script src="libraries/codemirror/addon/fold/brace-fold.js"&gt;&lt;/script&gt;
-    &lt;script src="libraries/codemirror/addon/fold/xml-fold.js"&gt;&lt;/script&gt;
-    &lt;script src="libraries/codemirror/addon/fold/comment-fold.js"&gt;&lt;/script&gt;
-    &lt;script src="libraries/codemirror/addon/search/search.js"&gt;&lt;/script&gt;
-    &lt;script src="libraries/codemirror/addon/search/searchcursor.js"&gt;&lt;/script&gt;
-    &lt;script src="libraries/codemirror/addon/dialog/dialog.js"&gt;&lt;/script&gt;
-    &lt;script src="libraries/codemirror/addon/hint/show-hint.js"&gt;&lt;/script&gt;
-    &lt;script src="libraries/codemirror/addon/hint/xml-hint.js"&gt;&lt;/script&gt;
-    &lt;script src="libraries/codemirror/addon/hint/html-hint.js"&gt;&lt;/script&gt;
-    &lt;script src="libraries/codemirror/addon/hint/css-hint.js"&gt;&lt;/script&gt;
-    &lt;script src="libraries/codemirror/addon/hint/javascript-hint.js"&gt;&lt;/script&gt;
-    &lt;script src="libraries/codemirror/addon/search/match-highlighter.js"&gt;&lt;/script&gt;
-    &lt;script src="libraries/codemirror/htmlhint.js"&gt;&lt;/script&gt;
-    &lt;script src="libraries/codemirror/csslint.js"&gt;&lt;/script&gt;
-    &lt;script src="libraries/codemirror/jshint.js"&gt;&lt;/script&gt;
-    &lt;script src="libraries/codemirror/addon/lint/lint.js"&gt;&lt;/script&gt;
-    &lt;script src="libraries/codemirror/addon/lint/html-lint.js"&gt;&lt;/script&gt;
-    &lt;script src="libraries/codemirror/addon/lint/css-lint.js"&gt;&lt;/script&gt;
-    &lt;script src="libraries/codemirror/addon/lint/javascript-lint.js"&gt;&lt;/script&gt;
-    &lt;script src="libraries/codemirror/inlet.min.js"&gt;&lt;/script&gt;
-    &lt;script src="libraries/codemirror/emmet.js"&gt;&lt;/script&gt;
-    &lt;script src="libraries/codemirror/addon/search/jump-to-line.js"&gt;&lt;/script&gt;
-    &lt;script src="libraries/codemirror/markdown.js"&gt;&lt;/script&gt;
-    &lt;script src="libraries/codemirror/continuelist.js"&gt;&lt;/script&gt;
-    &lt;script src="libraries/codemirror/mode/ruby/ruby.js"&gt;&lt;/script&gt;
-    &lt;script src="libraries/codemirror/mode/haml/haml.js"&gt;&lt;/script&gt;
-    &lt;script src="libraries/codemirror/mode/jade/jade.js"&gt;&lt;/script&gt;
-    &lt;script src="libraries/codemirror/mode/sass/sass.js"&gt;&lt;/script&gt;
-    &lt;script src="libraries/codemirror/mode/livescript/livescript.js"&gt;&lt;/script&gt;
-    &lt;script src="libraries/codemirror/mode/coffeescript/coffeescript.js"&gt;&lt;/script&gt;
-    &lt;script src="libraries/codemirror/coffee-script.js"&gt;&lt;/script&gt;
-    &lt;script src="libraries/codemirror/coffeelint.js"&gt;&lt;/script&gt;
-    &lt;script src="libraries/codemirror/addon/lint/coffeescript-lint.js"&gt;&lt;/script&gt;
-    &lt;script src="libraries/codemirror/mode/stylus/stylus.js"&gt;&lt;/script&gt;</textarea>
+                      <textarea class="libsources hide">    &lt;link rel="stylesheet" href="resources/editor/libraries/codemirror/resources/editor/lib/codemirror.css"&gt;
+    &lt;link rel="stylesheet" href="resources/editor/libraries/codemirror/addon/fold/foldgutter.css"&gt;
+    &lt;link rel="stylesheet" href="resources/editor/libraries/codemirror/inlet.css"&gt;
+    &lt;link rel="stylesheet" href="resources/editor/libraries/codemirror/addon/lint/lint.css"&gt;
+    &lt;link rel="stylesheet" href="resources/editor/libraries/codemirror/addon/dialog/dialog.css"&gt;
+    &lt;link rel="stylesheet" href="resources/editor/libraries/codemirror/addon/hint/show-hint.css"&gt;
+    &lt;script src="resources/editor/libraries/codemirror/resources/editor/lib/codemirror.js"&gt;&lt;/script&gt;
+    &lt;script src="resources/editor/libraries/codemirror/mode/javascript/javascript.js"&gt;&lt;/script&gt;
+    &lt;script src="resources/editor/libraries/codemirror/mode/xml/xml.js"&gt;&lt;/script&gt;
+    &lt;script src="resources/editor/libraries/codemirror/mode/css/css.js"&gt;&lt;/script&gt;
+    &lt;script src="resources/editor/libraries/codemirror/mode/htmlmixed/htmlmixed.js"&gt;&lt;/script&gt;
+    &lt;script src="resources/editor/libraries/codemirror/addon/edit/closetag.js"&gt;&lt;/script&gt;
+    &lt;script src="resources/editor/libraries/codemirror/addon/edit/matchbrackets.js"&gt;&lt;/script&gt;
+    &lt;script src="resources/editor/libraries/codemirror/addon/selection/active-line.js"&gt;&lt;/script&gt;
+    &lt;script src="resources/editor/libraries/codemirror/addon/fold/foldcode.js"&gt;&lt;/script&gt;
+    &lt;script src="resources/editor/libraries/codemirror/addon/fold/foldgutter.js"&gt;&lt;/script&gt;
+    &lt;script src="resources/editor/libraries/codemirror/addon/fold/brace-fold.js"&gt;&lt;/script&gt;
+    &lt;script src="resources/editor/libraries/codemirror/addon/fold/xml-fold.js"&gt;&lt;/script&gt;
+    &lt;script src="resources/editor/libraries/codemirror/addon/fold/comment-fold.js"&gt;&lt;/script&gt;
+    &lt;script src="resources/editor/libraries/codemirror/addon/search/search.js"&gt;&lt;/script&gt;
+    &lt;script src="resources/editor/libraries/codemirror/addon/search/searchcursor.js"&gt;&lt;/script&gt;
+    &lt;script src="resources/editor/libraries/codemirror/addon/dialog/dialog.js"&gt;&lt;/script&gt;
+    &lt;script src="resources/editor/libraries/codemirror/addon/hint/show-hint.js"&gt;&lt;/script&gt;
+    &lt;script src="resources/editor/libraries/codemirror/addon/hint/xml-hint.js"&gt;&lt;/script&gt;
+    &lt;script src="resources/editor/libraries/codemirror/addon/hint/html-hint.js"&gt;&lt;/script&gt;
+    &lt;script src="resources/editor/libraries/codemirror/addon/hint/css-hint.js"&gt;&lt;/script&gt;
+    &lt;script src="resources/editor/libraries/codemirror/addon/hint/javascript-hint.js"&gt;&lt;/script&gt;
+    &lt;script src="resources/editor/libraries/codemirror/addon/search/match-highlighter.js"&gt;&lt;/script&gt;
+    &lt;script src="resources/editor/libraries/codemirror/htmlhint.js"&gt;&lt;/script&gt;
+    &lt;script src="resources/editor/libraries/codemirror/csslint.js"&gt;&lt;/script&gt;
+    &lt;script src="resources/editor/libraries/codemirror/jshint.js"&gt;&lt;/script&gt;
+    &lt;script src="resources/editor/libraries/codemirror/addon/lint/lint.js"&gt;&lt;/script&gt;
+    &lt;script src="resources/editor/libraries/codemirror/addon/lint/html-lint.js"&gt;&lt;/script&gt;
+    &lt;script src="resources/editor/libraries/codemirror/addon/lint/css-lint.js"&gt;&lt;/script&gt;
+    &lt;script src="resources/editor/libraries/codemirror/addon/lint/javascript-lint.js"&gt;&lt;/script&gt;
+    &lt;script src="resources/editor/libraries/codemirror/inlet.min.js"&gt;&lt;/script&gt;
+    &lt;script src="resources/editor/libraries/codemirror/emmet.js"&gt;&lt;/script&gt;
+    &lt;script src="resources/editor/libraries/codemirror/addon/search/jump-to-line.js"&gt;&lt;/script&gt;
+    &lt;script src="resources/editor/libraries/codemirror/markdown.js"&gt;&lt;/script&gt;
+    &lt;script src="resources/editor/libraries/codemirror/continuelist.js"&gt;&lt;/script&gt;
+    &lt;script src="resources/editor/libraries/codemirror/mode/ruby/ruby.js"&gt;&lt;/script&gt;
+    &lt;script src="resources/editor/libraries/codemirror/mode/haml/haml.js"&gt;&lt;/script&gt;
+    &lt;script src="resources/editor/libraries/codemirror/mode/jade/jade.js"&gt;&lt;/script&gt;
+    &lt;script src="resources/editor/libraries/codemirror/mode/sass/sass.js"&gt;&lt;/script&gt;
+    &lt;script src="resources/editor/libraries/codemirror/mode/livescript/livescript.js"&gt;&lt;/script&gt;
+    &lt;script src="resources/editor/libraries/codemirror/mode/coffeescript/coffeescript.js"&gt;&lt;/script&gt;
+    &lt;script src="resources/editor/libraries/codemirror/coffee-script.js"&gt;&lt;/script&gt;
+    &lt;script src="resources/editor/libraries/codemirror/coffeelint.js"&gt;&lt;/script&gt;
+    &lt;script src="resources/editor/libraries/codemirror/addon/lint/coffeescript-lint.js"&gt;&lt;/script&gt;
+    &lt;script src="resources/editor/libraries/codemirror/mode/stylus/stylus.js"&gt;&lt;/script&gt;</textarea>
                       <textarea class="codemirror1 hide"></textarea>
                       <textarea class="codemirror2 hide"></textarea>
                       <textarea class="codemirror3 hide"></textarea>
@@ -412,11 +412,11 @@
                       <label for="createjs">Create JS</label>
                     </a>
                     <div class="hide">
-                      <textarea class="libsources hide">    &lt;script src="libraries/createjs/createjs.min.js"&gt;&lt;/script&gt;
-    &lt;script src="libraries/createjs/easeljs.min.js"&gt;&lt;/script&gt;
-    &lt;script src="libraries/createjs/tweenjs.min.js"&gt;&lt;/script&gt;
-    &lt;script src="libraries/createjs/soundjs.min.js"&gt;&lt;/script&gt;
-    &lt;script src="libraries/createjs/preloadjs.min.js"&gt;&lt;/script&gt;</textarea>
+                      <textarea class="libsources hide">    &lt;script src="resources/editor/libraries/createjs/createjs.min.js"&gt;&lt;/script&gt;
+    &lt;script src="resources/editor/libraries/createjs/easeljs.min.js"&gt;&lt;/script&gt;
+    &lt;script src="resources/editor/libraries/createjs/tweenjs.min.js"&gt;&lt;/script&gt;
+    &lt;script src="resources/editor/libraries/createjs/soundjs.min.js"&gt;&lt;/script&gt;
+    &lt;script src="resources/editor/libraries/createjs/preloadjs.min.js"&gt;&lt;/script&gt;</textarea>
                       <textarea class="createjs createjs1 hide"></textarea>
                       <textarea class="createjs createjs2 hide"></textarea>
                       <textarea class="createjs createjs3 hide"></textarea>
@@ -433,7 +433,7 @@
                       <label for="d3">D3</label>
                     </a>
                     <div class="hide">
-                      <textarea class="libsources hide">    &lt;script src="libraries/d3/d3.js"&gt;&lt;/script&gt;"&gt;</textarea>
+                      <textarea class="libsources hide">    &lt;script src="resources/editor/libraries/d3/d3.js"&gt;&lt;/script&gt;"&gt;</textarea>
                       <textarea class="d3 hide"></textarea>
                       <textarea class="d3zip jszipcode hide"></textarea>
                     </div>
@@ -444,7 +444,7 @@
                       <label for="dojo">Dojo</label>
                     </a>
                     <div class="hide">
-                      <textarea class="libsources hide">    &lt;script src="libraries/dojo/dojo.js"&gt;&lt;/script&gt;</textarea>
+                      <textarea class="libsources hide">    &lt;script src="resources/editor/libraries/dojo/dojo.js"&gt;&lt;/script&gt;</textarea>
                       <textarea class="dojo hide"></textarea>
                       <textarea class="dojozip jszipcode hide"></textarea>
                     </div>
@@ -457,7 +457,7 @@
                       <label for="fabricjs">Fabric JS (1.3.0)</label>
                     </a>
                     <div class="hide">
-                      <textarea class="libsources hide">    &lt;script src="libraries/fabric/fabric.min.js"&gt;&lt;/script&gt;</textarea>
+                      <textarea class="libsources hide">    &lt;script src="resources/editor/libraries/fabric/fabric.min.js"&gt;&lt;/script&gt;</textarea>
                       <textarea class="fabricjs hide"></textarea>
                       <textarea class="fabricjszip jszipcode hide"></textarea>
                     </div>
@@ -470,7 +470,7 @@
                     </a>
                     <span class="new">&nbsp; Popular !</span>
                     <div class="hide">
-                      <textarea class="libsources hide">    &lt;script src="libraries/jquery/jquery.js"&gt;&lt;/script&gt;</textarea>
+                      <textarea class="libsources hide">    &lt;script src="resources/editor/libraries/jquery/jquery.js"&gt;&lt;/script&gt;</textarea>
                       <textarea class="jquery hide"></textarea>
                       <textarea class="jqueryzip jszipcode hide"></textarea>
                     </div>
@@ -481,9 +481,9 @@
                       <label for="jqueryui">jQuery UI (1.10.4)</label>
                     </a>
                     <div class="hide">
-                      <textarea class="libsources hide">    &lt;link rel="stylesheet" href="libraries/jqueryui/jqueryui.css" /&gt;
-    &lt;script src="libraries/jqueryui/jqueryui.min.js"&gt;&lt;/script&gt;
-    &lt;script src="libraries/jqueryui/jquery.ui.touch-punch.min.js"&gt;&lt;/script&gt;</textarea>
+                      <textarea class="libsources hide">    &lt;link rel="stylesheet" href="resources/editor/libraries/jqueryui/jqueryui.css" /&gt;
+    &lt;script src="resources/editor/libraries/jqueryui/jqueryui.min.js"&gt;&lt;/script&gt;
+    &lt;script src="resources/editor/libraries/jqueryui/jquery.ui.touch-punch.min.js"&gt;&lt;/script&gt;</textarea>
                       <textarea class="jqueryui jqueryui1 hide"></textarea>
                       <textarea class="jqueryui jqueryui2 hide"></textarea>
                       <textarea class="jqueryui jqueryui3 hide"></textarea>
@@ -496,7 +496,7 @@
                       <label for="jquerytools">jQuery Tools (1.2.6)</label>
                     </a>
                     <div class="hide">
-                      <textarea class="libsources hide">    &lt;script src="libraries/jquerytools/jquery.tools.min.js"&gt;&lt;/script&gt;</textarea>
+                      <textarea class="libsources hide">    &lt;script src="resources/editor/libraries/jquerytools/jquery.tools.min.js"&gt;&lt;/script&gt;</textarea>
                       <textarea class="jquerytools hide"></textarea>
                       <textarea class="jquerytoolszip jszipcode hide"></textarea>
                     </div>
@@ -507,36 +507,36 @@
                       <label for="jqxsplitter">jqxSplitter (3.8.2)</label>
                     </a>
                     <div class="hide">
-                      <textarea class="libsources hide">    &lt;link rel="stylesheet" href="libraries/jqwidgets/styles/jqx.base.css"&gt;
-    &lt;link rel="stylesheet" href="libraries/jqwidgets/styles/jqx.android.css"&gt;
-    &lt;link rel="stylesheet" href="libraries/jqwidgets/styles/jqx.arctic.css"&gt;
-    &lt;link rel="stylesheet" href="libraries/jqwidgets/styles/jqx.black.css"&gt;
-    &lt;link rel="stylesheet" href="libraries/jqwidgets/styles/jqx.blackberry.css"&gt;
-    &lt;link rel="stylesheet" href="libraries/jqwidgets/styles/jqx.bootstrap.css"&gt;
-    &lt;link rel="stylesheet" href="libraries/jqwidgets/styles/jqx.classic.css"&gt;
-    &lt;link rel="stylesheet" href="libraries/jqwidgets/styles/jqx.darkblue.css"&gt;
-    &lt;link rel="stylesheet" href="libraries/jqwidgets/styles/jqx.energyblue.css"&gt;
-    &lt;link rel="stylesheet" href="libraries/jqwidgets/styles/jqx.fresh.css"&gt;
-    &lt;link rel="stylesheet" href="libraries/jqwidgets/styles/jqx.highcontrast.css"&gt;
-    &lt;link rel="stylesheet" href="libraries/jqwidgets/styles/jqx.metro.css"&gt;
-    &lt;link rel="stylesheet" href="libraries/jqwidgets/styles/jqx.metrodark.css"&gt;
-    &lt;link rel="stylesheet" href="libraries/jqwidgets/styles/jqx.mobile.css"&gt;
-    &lt;link rel="stylesheet" href="libraries/jqwidgets/styles/jqx.office.css"&gt;
-    &lt;link rel="stylesheet" href="libraries/jqwidgets/styles/jqx.orange.css"&gt;
-    &lt;link rel="stylesheet" href="libraries/jqwidgets/styles/jqx.shinyblack.css"&gt;
-    &lt;link rel="stylesheet" href="libraries/jqwidgets/styles/jqx.summer.css"&gt;
-    &lt;link rel="stylesheet" href="libraries/jqwidgets/styles/jqx.ui-darkness.css"&gt;
-    &lt;link rel="stylesheet" href="libraries/jqwidgets/styles/jqx.ui-le-frog.css"&gt;
-    &lt;link rel="stylesheet" href="libraries/jqwidgets/styles/jqx.ui-lightness.css"&gt;
-    &lt;link rel="stylesheet" href="libraries/jqwidgets/styles/jqx.ui-overcast.css"&gt;
-    &lt;link rel="stylesheet" href="libraries/jqwidgets/styles/jqx.ui-redmond.css"&gt;
-    &lt;link rel="stylesheet" href="libraries/jqwidgets/styles/jqx.ui-smoothness.css"&gt;
-    &lt;link rel="stylesheet" href="libraries/jqwidgets/styles/jqx.ui-start.css"&gt;
-    &lt;link rel="stylesheet" href="libraries/jqwidgets/styles/jqx.ui-sunny.css"&gt;
-    &lt;link rel="stylesheet" href="libraries/jqwidgets/styles/jqx.web.css"&gt;
-    &lt;link rel="stylesheet" href="libraries/jqwidgets/styles/jqx.windowsphone.css"&gt;
-    &lt;script src="libraries/jqwidgets/jqxcore.js"&gt;&lt;/script&gt;
-    &lt;script src="libraries/jqwidgets/jqxsplitter.js"&gt;&lt;/script&gt;</textarea>
+                      <textarea class="libsources hide">    &lt;link rel="stylesheet" href="resources/editor/libraries/jqwidgets/styles/jqx.base.css"&gt;
+    &lt;link rel="stylesheet" href="resources/editor/libraries/jqwidgets/styles/jqx.android.css"&gt;
+    &lt;link rel="stylesheet" href="resources/editor/libraries/jqwidgets/styles/jqx.arctic.css"&gt;
+    &lt;link rel="stylesheet" href="resources/editor/libraries/jqwidgets/styles/jqx.black.css"&gt;
+    &lt;link rel="stylesheet" href="resources/editor/libraries/jqwidgets/styles/jqx.blackberry.css"&gt;
+    &lt;link rel="stylesheet" href="resources/editor/libraries/jqwidgets/styles/jqx.bootstrap.css"&gt;
+    &lt;link rel="stylesheet" href="resources/editor/libraries/jqwidgets/styles/jqx.classic.css"&gt;
+    &lt;link rel="stylesheet" href="resources/editor/libraries/jqwidgets/styles/jqx.darkblue.css"&gt;
+    &lt;link rel="stylesheet" href="resources/editor/libraries/jqwidgets/styles/jqx.energyblue.css"&gt;
+    &lt;link rel="stylesheet" href="resources/editor/libraries/jqwidgets/styles/jqx.fresh.css"&gt;
+    &lt;link rel="stylesheet" href="resources/editor/libraries/jqwidgets/styles/jqx.highcontrast.css"&gt;
+    &lt;link rel="stylesheet" href="resources/editor/libraries/jqwidgets/styles/jqx.metro.css"&gt;
+    &lt;link rel="stylesheet" href="resources/editor/libraries/jqwidgets/styles/jqx.metrodark.css"&gt;
+    &lt;link rel="stylesheet" href="resources/editor/libraries/jqwidgets/styles/jqx.mobile.css"&gt;
+    &lt;link rel="stylesheet" href="resources/editor/libraries/jqwidgets/styles/jqx.office.css"&gt;
+    &lt;link rel="stylesheet" href="resources/editor/libraries/jqwidgets/styles/jqx.orange.css"&gt;
+    &lt;link rel="stylesheet" href="resources/editor/libraries/jqwidgets/styles/jqx.shinyblack.css"&gt;
+    &lt;link rel="stylesheet" href="resources/editor/libraries/jqwidgets/styles/jqx.summer.css"&gt;
+    &lt;link rel="stylesheet" href="resources/editor/libraries/jqwidgets/styles/jqx.ui-darkness.css"&gt;
+    &lt;link rel="stylesheet" href="resources/editor/libraries/jqwidgets/styles/jqx.ui-le-frog.css"&gt;
+    &lt;link rel="stylesheet" href="resources/editor/libraries/jqwidgets/styles/jqx.ui-lightness.css"&gt;
+    &lt;link rel="stylesheet" href="resources/editor/libraries/jqwidgets/styles/jqx.ui-overcast.css"&gt;
+    &lt;link rel="stylesheet" href="resources/editor/libraries/jqwidgets/styles/jqx.ui-redmond.css"&gt;
+    &lt;link rel="stylesheet" href="resources/editor/libraries/jqwidgets/styles/jqx.ui-smoothness.css"&gt;
+    &lt;link rel="stylesheet" href="resources/editor/libraries/jqwidgets/styles/jqx.ui-start.css"&gt;
+    &lt;link rel="stylesheet" href="resources/editor/libraries/jqwidgets/styles/jqx.ui-sunny.css"&gt;
+    &lt;link rel="stylesheet" href="resources/editor/libraries/jqwidgets/styles/jqx.web.css"&gt;
+    &lt;link rel="stylesheet" href="resources/editor/libraries/jqwidgets/styles/jqx.windowsphone.css"&gt;
+    &lt;script src="resources/editor/libraries/jqwidgets/jqxcore.js"&gt;&lt;/script&gt;
+    &lt;script src="resources/editor/libraries/jqwidgets/jqxsplitter.js"&gt;&lt;/script&gt;</textarea>
                       <textarea class="jqwidgets1 hide"></textarea>
                       <textarea class="jqwidgets2 hide"></textarea>
                       <textarea class="jqwidgets3 hide"></textarea>
@@ -577,10 +577,10 @@
                     </a>
                     <span class="new">&nbsp; Popular !</span>
                     <div class="hide">
-                      <textarea class="libsources hide">    &lt;script src="libraries/jszip/jszip.min.js"&gt;&lt;/script&gt;
-    &lt;script src="libraries/jszip/jszip-utils.js"&gt;&lt;/script&gt;
-    &lt;script src="libraries/jszip/FileSaver.js"&gt;&lt;/script&gt;
-    &lt;script src="libraries/jszip/Blob.js"&gt;&lt;/script&gt;</textarea>
+                      <textarea class="libsources hide">    &lt;script src="resources/editor/libraries/jszip/jszip.min.js"&gt;&lt;/script&gt;
+    &lt;script src="resources/editor/libraries/jszip/jszip-utils.js"&gt;&lt;/script&gt;
+    &lt;script src="resources/editor/libraries/jszip/FileSaver.js"&gt;&lt;/script&gt;
+    &lt;script src="resources/editor/libraries/jszip/Blob.js"&gt;&lt;/script&gt;</textarea>
                       <textarea class="jszip jszip1 hide"></textarea>
                       <textarea class="jszip jszip2 hide"></textarea>
                       <textarea class="jszip jszip3 hide"></textarea>
@@ -598,7 +598,7 @@
                       <label for="kinetic">Kinetic JS (4.7.3)</label>
                     </a>
                     <div class="hide">
-                      <textarea class="libsources hide">    &lt;script src="libraries/kinetic/kinetic.js"&gt;&lt;/script&gt;</textarea>
+                      <textarea class="libsources hide">    &lt;script src="resources/editor/libraries/kinetic/kinetic.js"&gt;&lt;/script&gt;</textarea>
                       <textarea class="kinetic hide"></textarea>
                       <textarea class="kineticzip jszipcode hide"></textarea>
                     </div>
@@ -609,7 +609,7 @@
                       <label for="knockout">Knockout JS (3.0.0)</label>
                     </a>
                     <div class="hide">
-                      <textarea class="libsources hide">    &lt;script src="libraries/knockout/knockout.js"&gt;&lt;/script&gt;</textarea>
+                      <textarea class="libsources hide">    &lt;script src="resources/editor/libraries/knockout/knockout.js"&gt;&lt;/script&gt;</textarea>
                       <textarea class="knockout hide"></textarea>
                       <textarea class="knockoutzip jszipcode hide"></textarea>
                     </div>
@@ -622,7 +622,7 @@
                       <label for="modernizer">Modernizer (2.8.3)</label>
                     </a>
                     <div class="hide">
-                      <textarea class="libsources hide">    &lt;script src="libraries/modernizer/modernizer.js"&gt;&lt;/script&gt;</textarea>
+                      <textarea class="libsources hide">    &lt;script src="resources/editor/libraries/modernizer/modernizer.js"&gt;&lt;/script&gt;</textarea>
                       <textarea class="modernizer hide"></textarea>
                       <textarea class="modernizerzip jszipcode hide"></textarea>
                     </div>
@@ -633,7 +633,7 @@
                       <label for="mootools">MooTools</label>
                     </a>
                     <div class="hide">
-                      <textarea class="libsources hide">    &lt;script src="libraries/mootools/mootools-yui-compressed.js"&gt;&lt;/script&gt;</textarea>
+                      <textarea class="libsources hide">    &lt;script src="resources/editor/libraries/mootools/mootools-yui-compressed.js"&gt;&lt;/script&gt;</textarea>
                       <textarea class="mootools hide"></textarea>
                       <textarea class="mootoolszip jszipcode hide"></textarea>
                     </div>
@@ -647,7 +647,7 @@
                     </a>
                     <span class="new">&nbsp; Popular !</span>
                     <div class="hide">
-                      <textarea class="libsources hide">    &lt;link rel="stylesheet" href="libraries/normalize/normalize.css" /&gt;</textarea>
+                      <textarea class="libsources hide">    &lt;link rel="stylesheet" href="resources/editor/libraries/normalize/normalize.css" /&gt;</textarea>
                       <textarea class="normalize hide"></textarea>
                       <textarea class="normalizezip jszipcode hide"></textarea>
                     </div>
@@ -660,7 +660,7 @@
                       <label for="paperjs">Paper JS (0.9.9)</label>
                     </a>
                     <div class="hide">
-                      <textarea class="libsources hide">    &lt;script src="libraries/paperjs/paperjs.js"&gt;&lt;/script&gt;</textarea>
+                      <textarea class="libsources hide">    &lt;script src="resources/editor/libraries/paperjs/paperjs.js"&gt;&lt;/script&gt;</textarea>
                       <textarea class="paperjs hide"></textarea>
                       <textarea class="paperjszip jszipcode hide"></textarea>
                     </div>
@@ -671,7 +671,7 @@
                       <label for="polyui">Poly UI Kit</label>
                     </a>
                     <div class="hide">
-                      <textarea class="libsources hide">    &lt;link rel="stylesheet" href="libraries/polyui/polyui.css"&gt;</textarea>
+                      <textarea class="libsources hide">    &lt;link rel="stylesheet" href="resources/editor/libraries/polyui/polyui.css"&gt;</textarea>
                       <textarea class="polyui hide"></textarea>
                       <textarea class="polyuizip jszipcode hide"></textarea>
                     </div>
@@ -682,7 +682,7 @@
                       <label for="prefixfree">Prefix-free (1.0.7)</label>
                     </a>
                     <div class="hide">
-                      <textarea class="libsources hide">    &lt;script src="libraries/prefixfree/prefixfree.min.js"&gt;&lt;/script&gt;</textarea>
+                      <textarea class="libsources hide">    &lt;script src="resources/editor/libraries/prefixfree/prefixfree.min.js"&gt;&lt;/script&gt;</textarea>
                       <textarea class="prefixfree hide"></textarea>
                       <textarea class="prefixfreezip jszipcode hide"></textarea>
                     </div>
@@ -693,7 +693,7 @@
                       <label for="processingjs">Processing JS (1.4.1)</label>
                     </a>
                     <div class="hide">
-                      <textarea class="libsources hide">    &lt;script src="libraries/processingjs/processingjs.js"&gt;&lt;/script&gt;</textarea>
+                      <textarea class="libsources hide">    &lt;script src="resources/editor/libraries/processingjs/processingjs.js"&gt;&lt;/script&gt;</textarea>
                       <textarea class="processingjs hide"></textarea>
                       <textarea class="processingjsszip jszipcode hide"></textarea>
                     </div>
@@ -704,7 +704,7 @@
                       <label for="prototypejs">Prototype JS (1.7.1)</label>
                     </a>
                     <div class="hide">
-                      <textarea class="libsources hide">    &lt;script src="libraries/prototypejs/prototypejs.js"&gt;&lt;/script&gt;</textarea>
+                      <textarea class="libsources hide">    &lt;script src="resources/editor/libraries/prototypejs/prototypejs.js"&gt;&lt;/script&gt;</textarea>
                       <textarea class="prototypejs hide"></textarea>
                       <textarea class="prototypejszip jszipcode hide"></textarea>
                     </div>
@@ -717,7 +717,7 @@
                       <label for="qooxdoo">Qooxdoo (3.0.1)</label>
                     </a>
                     <div class="hide">
-                      <textarea class="libsources hide">    &lt;script src="libraries/qooxdoo/qooxdoo.js"&gt;&lt;/script&gt;</textarea>
+                      <textarea class="libsources hide">    &lt;script src="resources/editor/libraries/qooxdoo/qooxdoo.js"&gt;&lt;/script&gt;</textarea>
                       <textarea class="qooxdoo hide"></textarea>
                       <textarea class="qooxdooszip jszipcode hide"></textarea>
                     </div>
@@ -731,7 +731,7 @@
                       <label for="raphael">Raphael JS (2.1.0)</label>
                     </a>
                     <div class="hide">
-                      <textarea class="libsources hide">    &lt;script src="libraries/raphael/raphael.js"&gt;&lt;/script&gt;</textarea>
+                      <textarea class="libsources hide">    &lt;script src="resources/editor/libraries/raphael/raphael.js"&gt;&lt;/script&gt;</textarea>
                       <textarea class="raphael hide"></textarea>
                       <textarea class="raphaelzip jszipcode hide"></textarea>
                     </div>
@@ -742,7 +742,7 @@
                       <label for="requirejs">Require JS (2.1.16)</label>
                     </a>
                     <div class="hide">
-                      <textarea class="libsources hide">    &lt;script src="libraries/require/require.js"&gt;&lt;/script&gt;</textarea>
+                      <textarea class="libsources hide">    &lt;script src="resources/editor/libraries/require/require.js"&gt;&lt;/script&gt;</textarea>
                       <textarea class="requirejs hide"></textarea>
                       <textarea class="requirejszip jszipcode hide"></textarea>
                     </div>
@@ -755,7 +755,7 @@
                       <label for="showdown">Showdown (0.4.0)</label>
                     </a>
                     <div class="hide">
-                      <textarea class="libsources hide">    &lt;script src="libraries/showdown/Showdown.min.js"&gt;&lt;/script&gt;</textarea>
+                      <textarea class="libsources hide">    &lt;script src="resources/editor/libraries/showdown/Showdown.min.js"&gt;&lt;/script&gt;</textarea>
                       <textarea class="showdown hide"></textarea>
                       <textarea class="showdownzip jszipcode hide"></textarea>
                     </div>
@@ -766,7 +766,7 @@
                       <label for="scriptaculous">Script.aculo.us (1.9.0)</label>
                     </a>
                     <div class="hide">
-                      <textarea class="libsources hide">    &lt;script src="libraries/scriptaculous/scriptaculous.js"&gt;&lt;/script&gt;</textarea>
+                      <textarea class="libsources hide">    &lt;script src="resources/editor/libraries/scriptaculous/scriptaculous.js"&gt;&lt;/script&gt;</textarea>
                       <textarea class="scriptaculous hide"></textarea>
                       <textarea class="scriptaculouszip jszipcode hide"></textarea>
                     </div>
@@ -777,7 +777,7 @@
                       <label for="snapsvg">Snap SVG (0.4.1)</label>
                     </a>
                     <div class="hide">
-                      <textarea class="libsources hide">    &lt;script src="libraries/snap-svg/snap-svg.js"&gt;&lt;/script&gt;</textarea>
+                      <textarea class="libsources hide">    &lt;script src="resources/editor/libraries/snap-svg/snap-svg.js"&gt;&lt;/script&gt;</textarea>
                       <textarea class="snapsvg hide"></textarea>
                       <textarea class="snapsvgzip jszipcode hide"></textarea>
                     </div>
@@ -788,7 +788,7 @@
                       <label for="svgjs">SVG JS (2.0.5)</label>
                     </a>
                     <div class="hide">
-                      <textarea class="libsources hide">    &lt;script src="libraries/svg-js/svg-js.js"&gt;&lt;/script&gt;</textarea>
+                      <textarea class="libsources hide">    &lt;script src="resources/editor/libraries/svg-js/svg-js.js"&gt;&lt;/script&gt;</textarea>
                       <textarea class="svgjs hide"></textarea>
                       <textarea class="svgjszip jszipcode hide"></textarea>
                     </div>
@@ -801,7 +801,7 @@
                       <label for="threejs">Three JS</label>
                     </a>
                     <div class="hide">
-                      <textarea class="libsources hide">    &lt;script src="libraries/threejs/three.min.js"&gt;&lt;/script&gt;</textarea>
+                      <textarea class="libsources hide">    &lt;script src="resources/editor/libraries/threejs/three.min.js"&gt;&lt;/script&gt;</textarea>
                       <textarea class="threejs hide"></textarea>
                       <textarea class="threejszip jszipcode hide"></textarea>
                     </div>
@@ -814,7 +814,7 @@
                       <label for="underscorejs">Underscore JS (1.8.3)</label>
                     </a>
                     <div class="hide">
-                      <textarea class="libsources hide">    &lt;script src="libraries/underscore/underscore.js"&gt;&lt;/script&gt;</textarea>
+                      <textarea class="libsources hide">    &lt;script src="resources/editor/libraries/underscore/underscore.js"&gt;&lt;/script&gt;</textarea>
                       <textarea class="underscorejs hide"></textarea>
                       <textarea class="underscorejszip jszipcode hide"></textarea>
                     </div>
@@ -827,7 +827,7 @@
                       <label for="webfontloader">Web Font Loader (1.4.10)</label>
                     </a>
                     <div class="hide">
-                      <textarea class="libsources hide">    &lt;script src="libraries/webfont/webfont.js"&gt;&lt;/script&gt;</textarea>
+                      <textarea class="libsources hide">    &lt;script src="resources/editor/libraries/webfont/webfont.js"&gt;&lt;/script&gt;</textarea>
                       <textarea class="webfontloader hide"></textarea>
                       <textarea class="webfontloaderzip jszipcode hide"></textarea>
                     </div>
@@ -840,7 +840,7 @@
                       <label for="yui">YUI (3.13.0)</label>
                     </a>
                     <div class="hide">
-                      <textarea class="libsources hide">    &lt;script src="libraries/yui/yui.js"&gt;&lt;/script&gt;</textarea>
+                      <textarea class="libsources hide">    &lt;script src="resources/editor/libraries/yui/yui.js"&gt;&lt;/script&gt;</textarea>
                       <textarea class="yui hide"></textarea>
                       <textarea class="yuizip jszipcode hide"></textarea>
                     </div>
@@ -853,7 +853,7 @@
                       <label for="zepto">Zepto (1.1.6)</label>
                     </a>
                     <div class="hide">
-                      <textarea class="libsources hide">    &lt;script src="libraries/zepto/zepto.js"&gt;&lt;/script&gt;</textarea>
+                      <textarea class="libsources hide">    &lt;script src="resources/editor/libraries/zepto/zepto.js"&gt;&lt;/script&gt;</textarea>
                       <textarea class="zepto hide"></textarea>
                       <textarea class="zeptozip jszipcode hide"></textarea>
                     </div>
@@ -1412,11 +1412,11 @@
     </div>
     -->
    
-    <script src="libraries/jqwidgets/jqxcore.js"></script>
-    <script src="libraries/jqwidgets/jqxsplitter.js"></script>
-    <script src="lib/shortcut.js"></script>
-    <script src="lib/inlet.min.js"></script>
-    <script src="kodeweave.min.js"></script>
+    <script src="resources/editor/libraries/jqwidgets/jqxcore.js"></script>
+    <script src="resources/editor/libraries/jqwidgets/jqxsplitter.js"></script>
+    <script src="resources/editor/lib/shortcut.js"></script>
+    <script src="resources/editor/lib/inlet.min.js"></script>
+    <script src="resources/editor/kodeweave.min.js"></script>
     
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

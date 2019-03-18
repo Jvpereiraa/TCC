@@ -24,5 +24,11 @@ public class TarefaDao {
     public List<Tarefa> listar(){
         return manager.createQuery("select t from Tarefa t", Tarefa.class).getResultList();
     }
+    
+    public Tarefa find(Integer id) {
+        return manager.createQuery("select distinct(t) from Tarefa t " + 
+            "where t.id = :id", Tarefa.class)
+                .setParameter("id", id).getSingleResult();
+    }
 
 }

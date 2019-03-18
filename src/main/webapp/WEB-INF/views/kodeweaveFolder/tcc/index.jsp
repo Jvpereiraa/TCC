@@ -13,12 +13,12 @@
 		<spring:url value="all.css" var="allCss"></spring:url>
 		 -->
 		
-		<link rel="icon" href="src/main/webapp/WEB-INF/views/kodeweaveFolder/tcc/favicon.ico">
-		<link rel="stylesheet" href="kodeweaveFolder/tcc/bootstrap.min.css">
-		<link rel="stylesheet" href="src/main/webapp/WEB-INF/views/kodeweaveFolder/tcc/jquery.min.js">
-		<link rel="stylesheet" href="src/main/webapp/WEB-INF/views/kodeweaveFolder/tcc/app.css">
-   		 <link rel="stylesheet" href="src/main/webapp/WEB-INF/views/kodeweaveFolder/tcc/bootstrap.bundle.min.js">
-		<link rel="stylesheet" href="src/main/webapp/WEB-INF/views/kodeweaveFolder/tcc/all.css">
+		<link rel="icon" href="resources/favicon.ico">
+		<link rel="stylesheet" href="resources/bootstrap.min.css">
+		<link rel="stylesheet" href="resources/jquery.min.js">
+		<link rel="stylesheet" href="resources/login/app.css">
+   		 <link rel="stylesheet" href="resources/bootstrap.bundle.min.js">
+		<link rel="stylesheet" href="resources/all.css">
 		
 		 
 </head>
@@ -28,8 +28,9 @@
       <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
         <div class="card card-signin my-5">
           <div class="card-body">    
-            <img src="src/main/webapp/WEB-INF/views/kodeweaveFolder/tcc/kodeweave.png" alt="Logo kodeweave" class="logo-kodeweave">
+            <img src="resources/login/kodeweave.png" alt="Logo kodeweave" class="logo-kodeweave">
             <h5 class="card-title text-center">Sign In</h5>
+            <div id='msgErroLogin' class="alert alert-danger">${falha}</div>
             <form class="form-signin" action="efetuaLogin" method="POST">
               <div class="form-label-group">
                 <input type="cpf" id="login" class="form-control" placeholder="CPF" name=login required autofocus>

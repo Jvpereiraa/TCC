@@ -7,12 +7,16 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+import org.springframework.context.annotation.Scope;
+import org.springframework.web.context.WebApplicationContext;
+
 /**
  *
  * @author zelphy
  */
 
 @Entity
+@Scope(value=WebApplicationContext.SCOPE_SESSION)
 public class Usuario {
     
 	@Id

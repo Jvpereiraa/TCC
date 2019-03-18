@@ -16,6 +16,10 @@ body {
   border-color: #000200;
 }
 
+div:empty {
+    display: none;
+}
+
 .card-signin {
   border: 0;
   border-radius: 1rem;
