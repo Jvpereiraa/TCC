@@ -18,6 +18,7 @@ import org.springframework.format.support.FormattingConversionService;
 import org.springframework.web.multipart.MultipartResolver;
 import org.springframework.web.multipart.support.StandardServletMultipartResolver;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
+import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
@@ -36,6 +37,18 @@ import br.com.kodeweave.sessao.controller.LoginController;
 public class AppWebConfiguration implements WebMvcConfigurer{
 	
 	private ApplicationContext applicationContext;
+	
+    @Bean
+    AutorizadorInterceptor autorizadorInterceptor() {
+        return new AutorizadorInterceptor();
+    }
+
+    @Override
+    public void addInterceptors(InterceptorRegistry registry) {
+        registry.addInterceptor(autorizadorInterceptor());
+    }
+
+	
 
     public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
         this.applicationContext = applicationContext;
@@ -92,5 +105,9 @@ public class AppWebConfiguration implements WebMvcConfigurer{
 
         return manager;
     }
+	
+	
+	
+	
 
 }

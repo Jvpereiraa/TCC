@@ -16,7 +16,7 @@ import org.springframework.web.context.WebApplicationContext;
  */
 
 @Entity
-@Scope(value=WebApplicationContext.SCOPE_SESSION)
+//@Scope(value=WebApplicationContext.SCOPE_SESSION)
 public class Usuario {
     
 	@Id

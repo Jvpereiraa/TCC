@@ -72,12 +72,19 @@ public class LoginController{
 	    	Boolean existeUsuario = usuarioDao.buscar(usuario);
 	        if(existeUsuario) {
 	            session.setAttribute("usuarioLogado", usuario);
-	            return new ModelAndView("kodeweaveFolder/editor/index.jsp");
+	            return new ModelAndView("redirect:editor");
 	        }
 	        redirectAttributes.addFlashAttribute("falha", "Usuário Inexistente");
 	        return new ModelAndView("redirect:loginForm");
     	};
     }
+    
+    @RequestMapping("logout")
+    public String logout(HttpSession session) {
+        session.invalidate();
+        return "redirect:loginForm";
+    }
+    
     
     @RequestMapping(value = "/cadastroUsuario")
     public ModelAndView cadastroUsuario(Usuario usuario) {

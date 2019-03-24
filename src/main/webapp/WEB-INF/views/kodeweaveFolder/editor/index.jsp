@@ -1039,13 +1039,14 @@
                 <security:authentication 
                     property="principal" 
                         var="usuario" />
-                Usuário: ${usuario.username }
+                Usuário: ${usuarioLogado.login}
         </a>
         
       </label>
-      <li class="nav-item">
-	     <a href="<c:url value="/logout" />">Sair</a></span>
-	 </li>
+      <label for="open-demos" class="hide-demos fr pointer">
+      		<a href="logout">Sair do sistema</a>
+      </label>
+     
       <div class="dialog demos-dialog fr">
         <div class="adddemos-tablets">
           <ul class="ldd-menu">
