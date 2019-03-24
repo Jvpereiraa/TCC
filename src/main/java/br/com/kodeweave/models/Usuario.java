@@ -24,12 +24,12 @@ public class Usuario {
     private Integer id;
     private String login;
     private String senha;
+    private String confirmaSenha;
     private String email;
     private String formacao;
-    private String foto;
+    private String pathFoto;
     private Date dataCricao;
     private String cnpj;
-    private Integer papel;
     
     
 	public Integer getId() {
@@ -62,12 +62,7 @@ public class Usuario {
 	public void setFormacao(String formacao) {
 		this.formacao = formacao;
 	}
-	public String getFoto() {
-		return foto;
-	}
-	public void setFoto(String foto) {
-		this.foto = foto;
-	}
+	
 	public Date getDataCricao() {
 		return dataCricao;
 	}
@@ -80,11 +75,17 @@ public class Usuario {
 	public void setCnpj(String cnpj) {
 		this.cnpj = cnpj;
 	}
-	public Integer getPapel() {
-		return papel;
+	public String getConfirmaSenha() {
+		return confirmaSenha;
 	}
-	public void setPapel(Integer papel) {
-		this.papel = papel;
+	public void setConfirmaSenha(String confirmaSenha) {
+		this.confirmaSenha = confirmaSenha;
+	}
+	public String getPathFoto() {
+		return pathFoto;
+	}
+	public void setPathFoto(String pathFoto) {
+		this.pathFoto = pathFoto;
 	}
 
    

@@ -1,6 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>    
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
+<%@ taglib uri="http://www.springframework.org/tags" prefix="s"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,31 +10,42 @@
     <title>Cadastrar Tarefa</title>
 </head>
 <body>
-    <form action="/kodeWeave1_1/tarefa" method="POST">
+	<form:form action="/kodeWeave1_1/tarefa" method="POST" modelAttribute="tarefa"
+		enctype="multipart/form-data">
         <div>
             <label>Projeto</label>
-            <input type="text" name="projeto" />
+            <form:input path="projeto" />
+             <form:errors path="projeto" />
         </div>
         <div>
             <label>Data de Criação</label>
-            <input type="date" name="dataCriacao" />
+            <form:input path="dataCriacao" />
+             <form:errors path="dataCriacao" />
         </div>
         <div>
             <label>Data de Entrega</label>
-            <input type="date" name="dataEntrega" />
+            <form:input path="dataEntrega" />
+             <form:errors path="dataEntrega" />
         </div>
         <div>
             <label>Usuário Responsável</label>
-            <input type="text" name="usuarioResponsavel" />
+            <form:input path="usuarioResponsavel" />
+            <form:errors path="usuarioResponsavel" />
         </div>
         <div>
             <label>Usuário Criador</label>
-            <input type="text" name="usuarioCriador" />
+            <form:input path="usuarioCriador" />
+            <form:errors path="usuarioCriador" />
         </div>
         <div>
             <label>Descrição</label>
-            <textarea rows="10" cols="20" name="descricao"></textarea>
+            <form:textarea path="descricao" rows="10" cols="20"/>
+            <form:errors path="descricao" />
         </div>
+        <div>
+	        <label>Sumário</label> 
+	        <input name="sumario" type="file" />
+   		</div>
         <!-- 
         <c:forEach items="${tipoStatus}" var="tipoStatusAux" varStatus="status">
 		    <div>
@@ -44,14 +57,14 @@
 		 -->
 		<div>
 			
-			<select name="status" >
-			 <option value="Em_andamento">Em andamento</option>
-			 <option value="Concluido">Concluido</option>
-			 <option value="Atrasado">Atrasado</option>
-			</select> 
+			<form:select path="status" >
+			 <form:option value="Em_andamento">Em andamento</form:option>
+			 <form:option value="Concluido">Concluido</form:option>
+			 <form:option value="Atrasado">Atrasado</form:option>
+			</form:select> 
 		</div> 	
         
         <button type="submit">Cadastrar</button>
-    </form>
+	</form:form>
 </body>
 </html>

@@ -1,6 +1,11 @@
 package br.com.kodeweave.conf;
 
+import java.util.concurrent.TimeUnit;
+
 import org.springframework.beans.BeansException;
+import org.springframework.cache.CacheManager;
+import org.springframework.cache.annotation.EnableCaching;
+import org.springframework.cache.guava.GuavaCacheManager;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.MessageSource;
 import org.springframework.context.annotation.Bean;
@@ -17,12 +22,15 @@ import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
+import com.google.common.cache.CacheBuilder;
+
 import br.com.kodeweave.dao.TarefaDao;
 import br.com.kodeweave.dao.UsuarioDao;
 import br.com.kodeweave.infra.FileSaver;
 import br.com.kodeweave.sessao.controller.LoginController;
 
 @EnableWebMvc
+@EnableCaching 
 @ComponentScan(basePackageClasses={LoginController.class, TarefaDao.class,
 		UsuarioDao.class, FileSaver.class})
 public class AppWebConfiguration implements WebMvcConfigurer{
@@ -73,5 +81,16 @@ public class AppWebConfiguration implements WebMvcConfigurer{
 	public MultipartResolver multipartResolver() {
 	    return new StandardServletMultipartResolver();
 	}
+	
+	@Bean
+    public CacheManager cacheManager() {
+        CacheBuilder<Object, Object> builder = 
+            CacheBuilder.newBuilder().maximumSize(100)
+                .expireAfterAccess(5, TimeUnit.MINUTES);
+        GuavaCacheManager manager = new GuavaCacheManager();
+        manager.setCacheBuilder(builder);
+
+        return manager;
+    }
 
 }

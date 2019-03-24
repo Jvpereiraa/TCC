@@ -1,4 +1,7 @@
 <!-- This snippet uses Font Awesome 5 Free as a dependency. You can download it at fontawesome.io! -->
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://www.springframework.org/tags" prefix="s"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <head>
 		<title>Kodeweave - Login</title>
 		
@@ -13,12 +16,12 @@
 		<spring:url value="all.css" var="allCss"></spring:url>
 		 -->
 		
-		<link rel="icon" href="favicon.ico">
-		<link rel="stylesheet" href="bootstrap.min.css">
-		<link rel="stylesheet" href="jquery.min.js">
-		<link rel="stylesheet" href="app.css">
-   		 <link rel="stylesheet" href="bootstrap.bundle.min.js">
-		<link rel="stylesheet" href="all.css">
+		<link rel="icon" href="resources/favicon.ico">
+		<link rel="stylesheet" href="resources/bootstrap.min.css">
+		<link rel="stylesheet" href="resources/jquery.min.js">
+		<link rel="stylesheet" href="resources/login/app.css">
+   		 <link rel="stylesheet" href="resources/bootstrap.bundle.min.js">
+		<link rel="stylesheet" href="resources/all.css">
 		
 		 
 </head>
@@ -28,8 +31,10 @@
       <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
         <div class="card card-signin my-5">
           <div class="card-body">    
-            <img src="kodeweave.png" alt="Logo kodeweave" class="logo-kodeweave">
+            <img src="resources/login/kodeweave.png" alt="Logo kodeweave" class="logo-kodeweave">
             <h5 class="card-title text-center">Sign In</h5>
+            <div id='msgErroLogin' class="alert alert-danger">${falha}</div>
+            <div id='msgErroLogin' class="alert alert-success">${sucesso}</div>
             <form class="form-signin" action="efetuaLogin" method="POST">
               <div class="form-label-group">
                 <input type="cpf" id="login" class="form-control" placeholder="CPF" name=login required autofocus>
@@ -48,6 +53,10 @@
               <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Sign in</button>
               <hr class="my-4">
             </form>
+            
+            <a class="custom-cadastro-usuario"  href="${s:mvcUrl('LC#cadastroUsuario').build()}">
+		                Cadastrar Usuário
+		    </a>
           </div>
         </div>
       </div>

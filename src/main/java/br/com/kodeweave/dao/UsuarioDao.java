@@ -1,11 +1,11 @@
 package br.com.kodeweave.dao;
 
-import java.sql.Date;
 import java.util.List;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.transaction.Transactional;
+import javax.validation.Valid;
 
 import org.springframework.stereotype.Repository;
 
@@ -18,7 +18,9 @@ public class UsuarioDao {
 	@PersistenceContext
     private EntityManager manager;
 	
-    
+	public void gravar(Usuario usuario) {
+	        manager.persist(usuario);
+	 }
     
 	
 	public Boolean buscar(Usuario usuario) {
@@ -35,8 +37,16 @@ public class UsuarioDao {
 	
 	}
 
-    public void gravar(Usuario usuario) {
-        manager.persist(usuario);
-    }
+
+	public Boolean buscarUsuarioExistente(Usuario usuario) {
+		List<Usuario> usuarios = manager.createQuery("select u from Usuario u where u.login='" + 
+				usuario.getLogin()+"'" + " and u.senha='" + usuario.getSenha()+"'", Usuario.class).getResultList();
+		if(usuarios.isEmpty())
+			return false;
+		else
+			return true;
+	}
+
+   
 
 }

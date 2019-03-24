@@ -1,3 +1,4 @@
+<%@ taglib uri="http://www.springframework.org/security/tags" prefix="security" %>
 <!DOCTYPE html>
 <html>
   <head>
@@ -14,10 +15,10 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="kodeWeave">
-    <link rel="apple-touch-icon" href="apple-touch-icon-iphone.png">
+    <link rel="apple-touch-icon" href="resources/editor/apple-touch-icon-iphone.png">
     <link rel="icon" type="image/vnd.microsoft.icon" href="resources/editor/favicon.ico">
-    <link rel="SHORTCUT ICON" href="favicon.ico">
-    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="SHORTCUT ICON" href="resources/editor/favicon.ico">
+    <link rel="stylesheet" href="resources/editor/css/theme.css" />
     <script src="https://togetherjs.com/togetherjs-min.js"></script>
     <script src="resources/editor/libraries/jquery/jquery.js"></script>
     <script src="resources/editor/lib/jquery.clearsearch.js"></script>
@@ -47,7 +48,7 @@
 
     <link rel="stylesheet" href="../tcc/userSetti.css">
 
-    <script src="resources/editor/libraries/codemirror/resources/editor/lib/codemirror.js"></script>
+    <script src="resources/editor/libraries/codemirror/codemirror.js"></script>
     <script src="resources/editor/libraries/codemirror/mode/javascript/javascript.js"></script>
     <script src="resources/editor/libraries/codemirror/mode/xml/xml.js"></script>
     <script src="resources/editor/libraries/codemirror/mode/css/css.js"></script>
@@ -93,6 +94,8 @@
     <script src="resources/editor/libraries/codemirror/continuelist.js"></script>
     <script src="resources/editor/libraries/codemirror/emmet.js"></script>
     <script src="resources/editor/libraries/codemirror/addon/tern/tern.js"></script>
+
+
 
     <script src="https://ternjs.net/node_modules/acorn/dist/acorn.js"></script>
     <script src="https://ternjs.net/node_modules/acorn/dist/acorn_loose.js"></script>
@@ -306,7 +309,7 @@
     &lt;link rel="stylesheet" href="resources/editor/libraries/codemirror/addon/lint/lint.css"&gt;
     &lt;link rel="stylesheet" href="resources/editor/libraries/codemirror/addon/dialog/dialog.css"&gt;
     &lt;link rel="stylesheet" href="resources/editor/libraries/codemirror/addon/hint/show-hint.css"&gt;
-    &lt;script src="resources/editor/libraries/codemirror/resources/editor/lib/codemirror.js"&gt;&lt;/script&gt;
+    &lt;script src="resources/editor/libraries/codemirror/codemirror.js"&gt;&lt;/script&gt;
     &lt;script src="resources/editor/libraries/codemirror/mode/javascript/javascript.js"&gt;&lt;/script&gt;
     &lt;script src="resources/editor/libraries/codemirror/mode/xml/xml.js"&gt;&lt;/script&gt;
     &lt;script src="resources/editor/libraries/codemirror/mode/css/css.js"&gt;&lt;/script&gt;
@@ -1032,10 +1035,17 @@
       <!-- Float Right -->
       <label for="open-demos" class="hide-demos fr pointer">
         <img title="profile image" class="img-responsive icon-user-projeto" src="../tcc/eu.jpg">
-          
+         <a href="#">
+                <security:authentication 
+                    property="principal" 
+                        var="usuario" />
+                Usuário: ${usuario.username }
         </a>
         
       </label>
+      <li class="nav-item">
+	     <a href="<c:url value="/logout" />">Sair</a></span>
+	 </li>
       <div class="dialog demos-dialog fr">
         <div class="adddemos-tablets">
           <ul class="ldd-menu">
@@ -1139,7 +1149,7 @@
                 <span class="fa fa-gear" title="Pre-Processador"></span>
               </a>
               <label for="selectEditor" class="selectEditor pointer">
-                <img class="pickEditor pointer" src="assets/md-small.svg">
+                <img class="pickEditor pointer" src="resources/editor/assets/md-small.svg">
               </label>
             </div>
             <div>

@@ -28,7 +28,7 @@ public class JPAConfiguration {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
         dataSource.setUsername("root");
         dataSource.setPassword("test"); // modifique para a senha do seu banco
-        dataSource.setUrl("jdbc:mysql://localhost:3306/kodeweave1");
+        dataSource.setUrl("jdbc:mysql://localhost:3306/kodeweave1?useSSL=false");
         dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
         factoryBean.setDataSource(dataSource);
 

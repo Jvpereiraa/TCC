@@ -1,4 +1,7 @@
 <!-- This snippet uses Font Awesome 5 Free as a dependency. You can download it at fontawesome.io! -->
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://www.springframework.org/tags" prefix="s"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <head>
 		<title>Kodeweave - Login</title>
 		
@@ -31,6 +34,7 @@
             <img src="resources/login/kodeweave.png" alt="Logo kodeweave" class="logo-kodeweave">
             <h5 class="card-title text-center">Sign In</h5>
             <div id='msgErroLogin' class="alert alert-danger">${falha}</div>
+            <div id='msgErroLogin' class="alert alert-success">${sucesso}</div>
             <form class="form-signin" action="efetuaLogin" method="POST">
               <div class="form-label-group">
                 <input type="cpf" id="login" class="form-control" placeholder="CPF" name=login required autofocus>
@@ -49,6 +53,10 @@
               <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Sign in</button>
               <hr class="my-4">
             </form>
+            
+            <a class="custom-cadastro-usuario"  href="${s:mvcUrl('LC#cadastroUsuario').build()}">
+		                Cadastrar Usuário
+		    </a>
           </div>
         </div>
       </div>

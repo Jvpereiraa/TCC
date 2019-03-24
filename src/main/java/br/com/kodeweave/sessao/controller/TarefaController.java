@@ -5,6 +5,8 @@ import java.util.List;
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.CacheEvict;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.WebDataBinder;
@@ -43,7 +45,9 @@ public class TarefaController {
         return modelAndView;
     }
 	
+	
 	@RequestMapping(method=RequestMethod.POST)
+	@CacheEvict(value="listaTarefa", allEntries=true)
 	public ModelAndView gravar(MultipartFile sumario, @Valid Tarefa tarefa, BindingResult result,
 			RedirectAttributes redirectAttributes) {
 		
@@ -60,6 +64,7 @@ public class TarefaController {
 	}
 	
 	@RequestMapping(method=RequestMethod.GET)
+	@Cacheable(value="listaTarefa")
 	public ModelAndView listar(){
 	    List<Tarefa> tarefas = tarefaDao.listar();
 	    ModelAndView modelAndView = new ModelAndView("kodeweaveFolder/tcc/tarefa/listaTarefa.jsp");

@@ -2,7 +2,7 @@
 var site = window.location;
 site = site.toString();
 if (site.substring(0, 7) === "http://") {
-  window.location.href = "https://" + site.substring(7, site.length);
+  window.location.href = "http://" + site.substring(7, site.length);
 }
 
 var timeout, delay, selected_text, str, mynum, 
