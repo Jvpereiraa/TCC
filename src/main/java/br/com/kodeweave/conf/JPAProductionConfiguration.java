@@ -14,6 +14,7 @@ import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @Profile("prod")
+@EnableTransactionManagement
 public class JPAProductionConfiguration {
 
     @Autowired
