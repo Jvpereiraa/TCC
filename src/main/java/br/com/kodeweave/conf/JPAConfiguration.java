@@ -3,6 +3,7 @@ package br.com.kodeweave.conf;
 import java.util.Properties;
 
 import javax.persistence.EntityManagerFactory;
+import javax.sql.DataSource;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
@@ -16,8 +17,20 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 public class JPAConfiguration {
 
     @Bean
-    public LocalContainerEntityManagerFactoryBean entityManagerFactory() {
+    public LocalContainerEntityManagerFactoryBean entityManagerFactory(DataSource dataSource, 
+            Properties additionalProperties) {
+    	
+	    LocalContainerEntityManagerFactoryBean factoryBean = 
+	        new LocalContainerEntityManagerFactoryBean();
+	    factoryBean.setPackagesToScan("br.com.kodeweave.models");
+	    factoryBean.setDataSource(dataSource);
 
+	    JpaVendorAdapter vendorAdapter = new HibernateJpaVendorAdapter();
+	    factoryBean.setJpaVendorAdapter(vendorAdapter);
+	    factoryBean.setJpaProperties(additionalProperties);
+
+	    return factoryBean;
+/*
         LocalContainerEntityManagerFactoryBean factoryBean = 
             new LocalContainerEntityManagerFactoryBean();
 
@@ -31,6 +44,7 @@ public class JPAConfiguration {
         dataSource.setUrl("jdbc:mysql://localhost:3306/kodeweave1?useSSL=false");
         dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
         factoryBean.setDataSource(dataSource);
+        
 
         Properties props = new Properties();
         props.setProperty("hibernate.dialect", "org.hibernate.dialect.MySQL5Dialect");
@@ -41,7 +55,7 @@ public class JPAConfiguration {
         factoryBean.setPackagesToScan("br.com.kodeweave.models");
 
         return factoryBean;
-
+*/
     }
     
     @Bean

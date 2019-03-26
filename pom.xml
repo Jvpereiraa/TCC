@@ -7,6 +7,29 @@
   <packaging>war</packaging>
   <build>
     <finalName>kodeWeave1_1</finalName>
+    <plugins>
+    	<plugin>
+		    <groupId>org.apache.maven.plugins</groupId>
+		    <artifactId>maven-dependency-plugin</artifactId>
+		    <version>3.6</version>
+		    <executions>
+		        <execution>
+		            <phase>package</phase>
+		            <goals><goal>copy</goal></goals>
+		            <configuration>
+		                <artifactItems>
+		                    <artifactItem>
+		                        <groupId>com.github.jsimone</groupId>
+		                        <artifactId>webapp-runner</artifactId>
+		                        <version>9.0.8.0</version>
+		                        <destFileName>webapp-runner.jar</destFileName>
+		                    </artifactItem>
+		                </artifactItems>
+		            </configuration>
+		        </execution>
+		    </executions>
+		</plugin>
+    </plugins>
   </build>
   <properties>
     <failOnMissingWebXml>false</failOnMissingWebXml>
@@ -20,6 +43,12 @@
       <artifactId>junit</artifactId>
       <version>3.8.1</version>
     </dependency>
+    
+    <dependency>
+	    <groupId>org.postgresql</groupId>
+	    <artifactId>postgresql</artifactId>
+	    <version>9.4-1201-jdbc41</version>
+	</dependency>
     
     <dependency>
         <groupId>javax.servlet</groupId>
@@ -178,6 +207,7 @@
 	</dependency>
 		    
 </dependencies>
+
  
 
     

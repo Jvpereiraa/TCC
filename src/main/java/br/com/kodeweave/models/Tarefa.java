@@ -1,12 +1,13 @@
 package br.com.kodeweave.models;
 
-import java.sql.Date;
 import java.util.Calendar;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 
 import org.springframework.format.annotation.DateTimeFormat;
 
@@ -17,21 +18,30 @@ public class Tarefa {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
-	private String projeto = "";
+	@ManyToOne(targetEntity=Projeto.class)
+	@JoinColumn(name="id_Projeto")
+	private Projeto projeto;
 	@DateTimeFormat
 	private Calendar dataCriacao = null;
 	@DateTimeFormat
 	private Calendar dataEntrega = null;
-	private String usuarioResponsavel = "";
-	private String usuarioCriador = "";
+	@ManyToOne(targetEntity=Usuario.class)
+	@JoinColumn(name="id_UsuarioResponsavel")
+	private Usuario usuarioResponsavel;
+	@ManyToOne(targetEntity=Usuario.class)
+	@JoinColumn(name="id_UsuarioCriador")	
+	private Usuario usuarioCriador;
 	private String descricao = "";
-	private String status;
 	private String sumarioPath;
+	@ManyToOne(targetEntity=StatusTarefa.class)
+	@JoinColumn(name="status")
+	private StatusTarefa status;
 	
-	public String getProjeto() {
+	
+	public Projeto getProjeto() {
 		return projeto;
 	}
-	public void setProjeto(String projeto) {
+	public void setProjeto(Projeto projeto) {
 		this.projeto = projeto;
 	}
 	public Calendar getDataCriacao() {
@@ -46,16 +56,16 @@ public class Tarefa {
 	public void setDataEntrega(Calendar dataEntrega) {
 		this.dataEntrega = dataEntrega;
 	}
-	public String getUsuarioResponsavel() {
+	public Usuario getUsuarioResponsavel() {
 		return usuarioResponsavel;
 	}
-	public void setUsuarioResponsavel(String usuarioResponsavel) {
+	public void setUsuarioResponsavel(Usuario usuarioResponsavel) {
 		this.usuarioResponsavel = usuarioResponsavel;
 	}
-	public String getUsuarioCriador() {
+	public Usuario getUsuarioCriador() {
 		return usuarioCriador;
 	}
-	public void setUsuarioCriador(String usuarioCriador) {
+	public void setUsuarioCriador(Usuario usuarioCriador) {
 		this.usuarioCriador = usuarioCriador;
 	}
 	public String getDescricao() {
@@ -64,10 +74,10 @@ public class Tarefa {
 	public void setDescricao(String descricao) {
 		this.descricao = descricao;
 	}
-	public String getStatus() {
+	public StatusTarefa getStatus() {
 		return status;
 	}
-	public void setStatus(String status) {
+	public void setStatus(StatusTarefa status) {
 		this.status = status;
 	}
 	public int getId() {
@@ -78,14 +88,14 @@ public class Tarefa {
 	}
 	
 	
-	
+	/*
 	@Override
     public String toString() {
         return "Tarefa [Projeto=" + projeto + ", descricao=" + descricao + 
         		", Data Criação=" + dataCriacao + ", Data Entrega=" + dataEntrega +
         		", usuario responsavel=" + usuarioResponsavel + ", usuario criador=" +
         		usuarioCriador + ", status=" + status + "]";
-    }
+    }*/
 	public String getSumarioPath() {
 		return sumarioPath;
 	}

@@ -65,6 +65,11 @@ public class LoginController{
     	return "kodeweaveFolder/editor/index.jsp";
     }
     
+    @RequestMapping("/home")
+    public String home() {
+    	return "kodeweaveFolder/tcc/home/home.jsp";
+    }
+    
     @RequestMapping("/efetuaLogin")
     public Callable<ModelAndView> efetuaLogin(Usuario usuario, HttpSession session,
     		RedirectAttributes redirectAttributes) {
@@ -72,7 +77,7 @@ public class LoginController{
 	    	Boolean existeUsuario = usuarioDao.buscar(usuario);
 	        if(existeUsuario) {
 	            session.setAttribute("usuarioLogado", usuario);
-	            return new ModelAndView("redirect:editor");
+	            return new ModelAndView("redirect:home");
 	        }
 	        redirectAttributes.addFlashAttribute("falha", "Usuário Inexistente");
 	        return new ModelAndView("redirect:loginForm");

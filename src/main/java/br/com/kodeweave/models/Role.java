@@ -1,7 +1,11 @@
 package br.com.kodeweave.models;
 
+import java.util.List;
+
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToMany;
 
 import org.springframework.security.core.GrantedAuthority;
 
@@ -12,8 +16,23 @@ public class Role implements GrantedAuthority {
 
     @Id
     private String nome;
+    @ManyToMany(targetEntity=Usuario.class)
+    @JoinColumn(name="id_Usuario")
+    private List<Usuario> usuario;
 
-    public String getNome() {
+    public List<Usuario> getUsuario() {
+		return usuario;
+	}
+
+	public void setUsuario(List<Usuario> usuario) {
+		this.usuario = usuario;
+	}
+
+	public static long getSerialversionuid() {
+		return serialVersionUID;
+	}
+
+	public String getNome() {
         return nome;
     }
 

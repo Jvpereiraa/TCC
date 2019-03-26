@@ -1,0 +1,48 @@
+.col-personalisado {
+    width: 100%;
+    background-color: #4dbe3e;
+    height: 60px;
+}
+
+.icon-user {
+    max-height: 55px;
+    margin-left: 95%;
+    margin-top: 2px;
+}
+
+.icon-logo {
+    max-height: 55px;
+    margin-top: 2px;
+}
+
+.nav-link-white{
+	color: white;
+	padding-right: .5rem;
+	padding-left: .5rem;
+}
+
+nav-link-white:focus{
+	color: gray;
+}
+
+.icon-projeto {
+    max-height: 55px;
+    margin-right: 95%;
+    margin-top: 2px;
+}
+
+.navbar-modificado {
+	height: 60px;
+}
+
+.bg-color-nav{
+	background-color: #4dbe3e;
+}
+
+.icon-user-projeto {
+    max-height: 50px;
+    position: absolute;
+    right: 0px;
+    margin-right: 10px; 
+    top: 5px;
+}

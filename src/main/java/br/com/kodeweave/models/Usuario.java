@@ -1,14 +1,14 @@
 package br.com.kodeweave.models;
 
 import java.sql.Date;
+import java.util.List;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-
-import org.springframework.context.annotation.Scope;
-import org.springframework.web.context.WebApplicationContext;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToMany;
 
 /**
  *
@@ -27,11 +27,20 @@ public class Usuario {
     private String confirmaSenha;
     private String email;
     private String formacao;
-    private String pathFoto;
+	private String pathFoto;
     private Date dataCricao;
     private String cnpj;
+    @ManyToMany(targetEntity=PapelProjeto.class)
+    @JoinColumn(name="id_PapelProjeto")
+	private List<PapelProjeto> papelProjeto;
     
     
+	public List<PapelProjeto> getPapelProjeto() {
+		return papelProjeto;
+	}
+	public void setPapelProjeto(List<PapelProjeto> papelProjeto) {
+		this.papelProjeto = papelProjeto;
+	}
 	public Integer getId() {
 		return id;
 	}
