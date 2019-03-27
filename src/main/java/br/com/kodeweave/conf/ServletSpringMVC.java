@@ -22,7 +22,8 @@ public class ServletSpringMVC extends AbstractAnnotationConfigDispatcherServletI
 	@Override
 	protected Class<?>[] getServletConfigClasses() {
 		// TODO Auto-generated method stub
-		return new Class[] {AppWebConfiguration.class, JPAConfiguration.class, JPAProductionConfiguration.class};
+		return new Class[] {AppWebConfiguration.class, JPAConfiguration.class, 
+				JPAProductionConfiguration.class};
 	}
 
 	@Override
@@ -42,12 +43,12 @@ public class ServletSpringMVC extends AbstractAnnotationConfigDispatcherServletI
 	protected void customizeRegistration(Dynamic registration) {
 	    registration.setMultipartConfig(new MultipartConfigElement(""));
 	}
-	/*
+	
 	@Override
 	public void onStartup(ServletContext servletContext) throws ServletException {
 	    super.onStartup(servletContext);
 	    servletContext.addListener(RequestContextListener.class);
-	    servletContext.setInitParameter("spring.profiles.active", "dev");
+	    servletContext.setInitParameter("spring.profiles.active", "prod");
 	}
-*/
+
 }
