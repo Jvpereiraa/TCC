@@ -7,12 +7,14 @@ import java.util.Properties;
 import org.apache.commons.dbcp.BasicDataSource;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Profile;
 import org.springframework.core.env.Environment;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @EnableTransactionManagement
 @Profile("prod")
+@ComponentScan({ "com.beni_regev" })
 public class JPAProductionConfiguration {
 	
 	@Autowired
