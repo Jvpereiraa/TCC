@@ -91,7 +91,7 @@ public class LoginController{
     }
     
     
-    @RequestMapping(value = "/cadastroUsuario")
+    @RequestMapping(value = "/cadastroUsuario",  method = RequestMethod.GET )
     public ModelAndView cadastroUsuario(Usuario usuario) {
     	ModelAndView modelAndView = new ModelAndView("kodeweaveFolder/tcc/usuario/cadastroUsuario.jsp");
     	return modelAndView;
