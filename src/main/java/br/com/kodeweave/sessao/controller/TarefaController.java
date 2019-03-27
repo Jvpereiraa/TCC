@@ -47,7 +47,7 @@ public class TarefaController {
 	
 	
 	@RequestMapping(method=RequestMethod.POST)
-	@CacheEvict(value="listaTarefa", allEntries=true)
+	//@CacheEvict(value="listaTarefa", allEntries=true)
 	public ModelAndView gravar(MultipartFile sumario, @Valid Tarefa tarefa, BindingResult result,
 			RedirectAttributes redirectAttributes) {
 		
@@ -64,7 +64,7 @@ public class TarefaController {
 	}
 	
 	@RequestMapping(method=RequestMethod.GET)
-	@Cacheable(value="listaTarefa")
+	//@Cacheable(value="listaTarefa")
 	public ModelAndView listar(){
 	    List<Tarefa> tarefas = tarefaDao.listar();
 	    ModelAndView modelAndView = new ModelAndView("kodeweaveFolder/tcc/tarefa/listaTarefa.jsp");

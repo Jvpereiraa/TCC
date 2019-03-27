@@ -31,7 +31,6 @@ import br.com.kodeweave.infra.FileSaver;
 import br.com.kodeweave.sessao.controller.LoginController;
 
 @EnableWebMvc
-@EnableCaching 
 @ComponentScan(basePackageClasses={LoginController.class, TarefaDao.class,
 		UsuarioDao.class, FileSaver.class})
 public class AppWebConfiguration implements WebMvcConfigurer{
@@ -94,7 +93,7 @@ public class AppWebConfiguration implements WebMvcConfigurer{
 	public MultipartResolver multipartResolver() {
 	    return new StandardServletMultipartResolver();
 	}
-	
+	/*
 	@Bean
     public CacheManager cacheManager() {
         CacheBuilder<Object, Object> builder = 
@@ -106,7 +105,7 @@ public class AppWebConfiguration implements WebMvcConfigurer{
         return manager;
     }
 	
-	
+	*/
 	
 	
 
