@@ -43,5 +43,9 @@ public class JPAProductionConfiguration {
         dataSource.setPassword(dbUrl.getUserInfo().split(":")[1]);
 
         return dataSource;
-    }    
+    }  
+    
+    
+    
+    
 }
